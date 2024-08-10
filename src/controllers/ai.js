@@ -4,11 +4,15 @@ import { run } from "../../geminiFlash.js";
 
 export const askGemini = async (req, res) => {
   try {
-    const { image } = req.body;
-    if (!image) return res.sendStatus(401);
+    return res.status(200).json({
+      name: "Imran",
+      age: 19
+    })
+    // const { image } = req.body;
+    // if (!image) return res.sendStatus(401);
 
-    const result = await run(image);
-    return res.status(200).json(result.slice(7, -3)).end();
+    // const result = await run(image);
+    // return res.status(200).json(result.slice(7, -3)).end();
     
     // return res;
     // .then((user) => {

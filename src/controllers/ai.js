@@ -13,6 +13,7 @@ export const askGemini = async (req, res) => {
 
     const result = await run(image);
     
+    console.log(result);
     return res.status(200).json({
       name: "Imran",
       result: result

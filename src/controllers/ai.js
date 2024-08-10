@@ -15,7 +15,6 @@ export const askGemini = async (req, res) => {
     
     return res.status(200).json({
       name: "Imran",
-      age: 19,
       result: result
     })
     // return res.status(200).json(result.slice(7, -3)).end();
